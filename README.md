@@ -23,26 +23,22 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Design screenshot](https://github.com/TheCoder-Rahul/fontend_mentor_testimonials_grid/blob/main/project_screenshot.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- 👉 [Solution URL](https://github.com/TheCoder-Rahul/fontend_mentor_testimonials_grid.git)
+- 👉 [Live Site URL](https://thecoder-rahul.github.io/fontend_mentor_testimonials_grid/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- 👉 **Markup:** Semantic HTML5 for better accessibility and SEO.
+- 👉 **Styling:** CSS3 with Custom Properties (variables) for a maintainable color scheme, font-properties, and different sizes.
+- 👉 **Layout:** Flexbox for centering the card and managing the internal alignment.
+- 👉 **Workflow:** Mobile-first approach and Responsive Design using Media Queries.
 
 ### What I learned
 
@@ -61,6 +57,6 @@ To see how you can add code snippets, see below:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- 👉 GitHub - [TheCoder-Rahul](https://github.com/TheCoder-Rahul)
+- 👉 Frontend Mentor - [@TheCoder-Rahul](https://www.frontendmentor.io/profile/TheCoder-Rahul)
+- 👉 LinkedIn - [@Rahul Kumar](https://www.linkedin.com/in/rahul-the-developer/)

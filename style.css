@@ -57,7 +57,39 @@ article {
   flex-direction: column;
   border-radius: 0.5rem;
   background-color: var(--white);
-  box-shadow: 1.5rem 1.5rem 3rem hsla(224, 10%, 45%, 0.1);
+  box-shadow: 2rem 2rem 4rem hsla(224, 10%, 45%, 0.5);
+}
+.testimonial_1 {
+  --border-clr: var(--purple-300);
+  --info-text-clr: var(--grey-100);
+  --info-header-clr: var(--grey-100);
+  background-color: var(--purple-500);
+  --testimonial-text-clr: var(--grey-100);
+  --testimonial-title-clr: var(--grey-100);
+}
+.testimonial_2 {
+  --border-clr: var(--grey-500);
+  --info-text-clr: var(--grey-100);
+  --info-header-clr: var(--grey-100);
+  background-color: var(--grey-500);
+  --testimonial-text-clr: var(--grey-100);
+  --testimonial-title-clr: var(--grey-100);
+}
+.testimonial_3, .testimonial_5 {
+  --border-clr: var(--white);
+  --info-text-clr: var(--grey-400);
+  --info-header-clr: var(--grey-500);
+  background-color: var(--white);
+  --testimonial-text-clr: var(--grey-400);
+  --testimonial-title-clr: var(--grey-500);
+}
+.testimonial_4 {
+  --border-clr: var(--purple-300);
+  --info-text-clr: var(--white);
+  --info-header-clr: var(--white);
+  background-color: var(--dark-blue);
+  --testimonial-text-clr: var(--white);
+  --testimonial-title-clr: var(--white);
 }
 .testimonial_profile {
   gap: 1rem;
@@ -68,25 +100,25 @@ article {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  border: 0.125rem solid var(--white);
+  border: 0.125rem solid var(--border-clr);
 }
 .testimonial_info h3 {
-  color: var(--grey-500);
+  color: var(--info-header-clr);
   font-size: var(--sec-headings-font);
   font-weight: var(--semibold-weight-font);
 }
 .testimonial_info p {
-  color: var(--grey-400);
+  color: var(--info-text-clr);
   font-size: var(--small-font);
   font-weight: var(--medium-weight-font);
 }
 .testimonial_title {
-  color: var(--dark-blue);
+  color: var(--testimonial-title-clr);
   font-size: var(--headings-font);
   font-weight: var(--semibold-weight-font);
 }
 .testimonial_text {
-  color: var(--grey-500);
+  color: var(--testimonial-text-clr);
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: var(--purple-500); }

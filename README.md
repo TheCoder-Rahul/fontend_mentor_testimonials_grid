@@ -37,14 +37,16 @@ Users should be able to:
 
 - 👉 **Markup:** Semantic HTML5 for better accessibility and SEO.
 - 👉 **Styling:** CSS3 with Custom Properties (variables) for a maintainable color scheme, font-properties, and different sizes.
-- 👉 **Layout:** Flexbox for centering the card and managing the internal alignment.
+- 👉 **Layout:** CSS Grid (Grid Template Areas) for the main layout and Flexbox for internal component alignment.
 - 👉 **Workflow:** Mobile-first approach and Responsive Design using Media Queries.
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+**Mastering Complex Layouts with CSS Grid**
 
-To see how you can add code snippets, see below:
+In this project, I gained a deeper understanding of the grid-template-areas property. It allowed me to map out the asymmetrical testimonial sections visually in my CSS, making the transition from a single-column mobile view to a complex 4-column desktop grid much more intuitive and readable.
+
+Check my code snippets below:
 
 ```html
 <main class="container">

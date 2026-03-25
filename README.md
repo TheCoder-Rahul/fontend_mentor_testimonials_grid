@@ -108,8 +108,162 @@ To see how you can add code snippets, see below:
 </main>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+@font-face {
+  font-family: 'Barlow';
+  src: url('./fonts/BarlowSemiCondensed-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Barlow';
+  src: url('./fonts/BarlowSemiCondensed-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --body-font: 0.813rem;
+  --small-font: 0.75rem;
+  --headings-font: 1.25rem;
+  --sec-headings-font: 0.9rem;
+  --medium-weight-font: 500;
+  --semibold-weight-font: 600;
+  --black: hsl(0, 0%, 7%);
+  --white: hsl(0, 0%, 100%);
+  --grey-200: hsl(0, 0%, 81%);
+  --grey-100: hsl(214, 17%, 92%);
+  --grey-400: hsl(224, 10%, 45%);
+  --grey-500: hsl(217, 19%, 35%);
+  --dark-blue: hsl(219, 29%, 14%);
+  --purple-50: hsl(260, 100%, 95%);
+  --purple-300: hsl(264, 82%, 80%);
+  --purple-500: hsl(263, 55%, 52%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.2;
+  font-size: var(--body-font);
+  background-color: var(--grey-100);
+  font-family: 'Barlow', sans-serif;
+  font-weight: var(--medium-weight-font);
+}
+.container {
+  gap: 2rem;
+  display: grid;
+  margin: 0 auto;
+  max-width: 70rem;
+  padding: 4rem 2rem;
+}
+article {
+  gap: 1.5rem;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  box-shadow: 2rem 2rem 4rem hsla(224, 10%, 45%, 0.25);
+}
+.testimonial_1 {
+  position: relative;
+  --border-clr: var(--purple-300);
+  --info-text-clr: var(--grey-100);
+  --info-header-clr: var(--grey-100);
+  background-color: var(--purple-500);
+  --testimonial-text-clr: var(--grey-100);
+  --testimonial-title-clr: var(--grey-100);
+}
+.testimonial_1 .quotation_mark {
+  z-index: 1;
+  position: absolute;
+  inset: 0 3rem auto auto;
+}
+.testimonial_1 > * {
+  z-index: 2;
+  position: relative;
+}
+.testimonial_2 {
+  --border-clr: var(--grey-500);
+  --info-text-clr: var(--grey-100);
+  --info-header-clr: var(--grey-100);
+  background-color: var(--grey-500);
+  --testimonial-text-clr: var(--grey-100);
+  --testimonial-title-clr: var(--grey-100);
+}
+.testimonial_3, .testimonial_5 {
+  --border-clr: var(--white);
+  --info-text-clr: var(--grey-400);
+  --info-header-clr: var(--grey-500);
+  background-color: var(--white);
+  --testimonial-text-clr: var(--grey-400);
+  --testimonial-title-clr: var(--grey-500);
+}
+.testimonial_4 {
+  --border-clr: var(--purple-300);
+  --info-text-clr: var(--white);
+  --info-header-clr: var(--white);
+  background-color: var(--dark-blue);
+  --testimonial-text-clr: var(--white);
+  --testimonial-title-clr: var(--white);
+}
+.testimonial_profile {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+}
+.testimonial_profile img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 0.125rem solid var(--border-clr);
+}
+.testimonial_info h3 {
+  color: var(--info-header-clr);
+  font-size: var(--sec-headings-font);
+  font-weight: var(--semibold-weight-font);
+}
+.testimonial_info p {
+  color: var(--info-text-clr);
+  font-size: var(--small-font);
+  font-weight: var(--medium-weight-font);
+}
+.testimonial_title {
+  color: var(--testimonial-title-clr);
+  font-size: var(--headings-font);
+  font-weight: var(--semibold-weight-font);
+}
+.testimonial_text {
+  line-height: 1.5;
+  color: var(--testimonial-text-clr);
+}
+.attribution { font-size: 11px; text-align: center; position: absolute; bottom: 1rem; }
+.attribution a { color: var(--purple-500); }
+
+@media (min-width: 768px) {
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container {
+    padding: 0;
+    row-gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(auto, 1fr);
+    grid-template-areas: 'testimonial_1 testimonial_1 testimonial_2 testimonial_5'
+                         'testimonial_3 testimonial_4 testimonial_4 testimonial_5';
+  }
+  .testimonial_1 { grid-area: testimonial_1; }
+  .testimonial_2 { grid-area: testimonial_2; }
+  .testimonial_3 { grid-area: testimonial_3; }
+  .testimonial_4 { grid-area: testimonial_4; }
+  .testimonial_5 { grid-area: testimonial_5; }
 }
 ```
 
